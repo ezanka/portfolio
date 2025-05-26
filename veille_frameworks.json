@@ -1,0 +1,84 @@
+[
+    {
+        "title": "The Human Element: Using Research And Psychology To Elevate Data Storytelling",
+        "link": "https://smashingmagazine.com/2025/02/human-element-using-research-psychology-elevate-data-storytelling/",
+        "published": "Wed, 26 Feb 2025 10:00:00 GMT",
+        "summary": "effective data storytelling isn’t a black box. by integrating ux research & psychology, you can craft more impactful and persuasive narratives. victor yocco and angelica lo duca outline a five-step framework that provides a roadmap for creating data stories that resonate with audiences on both a cognitive and emotional level.",
+        "tags": [
+            "framework"
+        ]
+    },
+    {
+        "title": "React v16.13.0",
+        "link": "https://reactjs.org/blog/2020/02/26/react-v16.13.0.html",
+        "published": "Wed, 26 Feb 2020 00:00:00 GMT",
+        "summary": "\n\nthis blog site has been archived. go to react.dev/blog to see the recent posts.\n\n\ntoday we are releasing react 16.13.0. it contains bugfixes and new deprecation warnings to help prepare for a future major release.\nnew warnings \nwarnings for some updates during render \na react component should not cause side effects in other components during rendering.\nit is supported to call setstate during render, but only for the same component. if you call setstate during a render on a different component,",
+        "tags": [
+            "react"
+        ]
+    },
+    {
+        "title": "Signals + HTTP = httpResource [Tutorial]",
+        "link": "https://blog.angulartraining.com/signals-http-httpresource-tutorial-bf8792e9bda0?source=rss------angular-5",
+        "published": "Wed, 16 Apr 2025 22:50:54 GMT",
+        "summary": "angular 19.2 brought an experimental new api called httpresource. i published a tutorial about rxresource a few months ago, and…continue reading on angular training »",
+        "tags": [
+            "angular"
+        ]
+    },
+    {
+        "title": "Fixing ‘ngModel’ and ‘ngClass’ Errors in Angular 19 Standalone Components",
+        "link": "https://medium.com/@cristiansifuentes/fixing-ngmodel-and-ngclass-errors-in-angular-19-standalone-components-d876ff098bc2?source=rss------angular-5",
+        "published": "Wed, 16 Apr 2025 22:05:16 GMT",
+        "summary": "if you’re building a modern angular 19 app using standalone components, chances are you’ve encountered this error:continue reading on medium »",
+        "tags": [
+            "angular"
+        ]
+    },
+    {
+        "title": "Farewell Flex: The Future of Layouts in Angular 19 (2025 Edition)",
+        "link": "https://medium.com/@cristiansifuentes/farewell-flex-the-future-of-layouts-in-angular-19-2025-edition-316d7caa8dbe?source=rss------angular-5",
+        "published": "Wed, 16 Apr 2025 17:36:01 GMT",
+        "summary": "spoiler alert: @angular/flex-layout has officially hung up its boots. it’s 2025, and things have changed quite a bit in the angular…continue reading on medium »",
+        "tags": [
+            "angular"
+        ]
+    },
+    {
+        "title": "Pinia vs Vuex: Choosing the Best State Management for Vue.js",
+        "link": "https://medium.com/@developerawam/pinia-vs-vuex-choosing-the-best-state-management-for-vue-js-5c2760947c62?source=rss------vuejs-5",
+        "published": "Wed, 16 Apr 2025 01:46:47 GMT",
+        "summary": "state management is a crucial part of building scalable vue.js applications. as your app grows, managing data across components becomes…continue reading on medium »",
+        "tags": [
+            "vue"
+        ]
+    },
+    {
+        "title": "React Labs: What We've Been Working On – June 2022",
+        "link": "https://reactjs.org/blog/2022/06/15/react-labs-what-we-have-been-working-on-june-2022.html",
+        "published": "Wed, 15 Jun 2022 00:00:00 GMT",
+        "summary": "\n\nthis blog site has been archived. go to react.dev/blog to see the recent posts.\n\n\nreact 18 was years in the making, and with it brought valuable lessons for the react team. its release was the result of many years of research and exploring many paths. some of those paths were successful; many more were dead-ends that led to new insights. one lesson we’ve learned is that it’s frustrating for the community to wait for new features without having insight into these paths that we’re exploring.\nwe ",
+        "tags": [
+            "react",
+            "framework"
+        ]
+    },
+    {
+        "title": "Dev Hackathon: Reusable Creativity on Wix Studio",
+        "link": "https://www.sitepoint.com/dev-hackathon-reusable-creativity-on-wix-studio/?utm_source=rss",
+        "published": "Wed, 14 Aug 2024 18:29:32 GMT",
+        "summary": "\n\n\n            read dev hackathon: reusable creativity on wix studio and learn web with sitepoint. our web development and design tutorials, courses, and books will teach you html, css, javascript, php, python, and more.\n            \n              continue reading\n              dev hackathon: reusable creativity on wix studio\n              on sitepoint.\n            ",
+        "tags": [
+            "web dev"
+        ]
+    },
+    {
+        "title": "Making a Browser Based Game With Vanilla JS and CSS",
+        "link": "https://www.sitepoint.com/browser-game-with-vanilla-js-and-css/?utm_source=rss",
+        "published": "Wed, 12 Mar 2025 22:30:59 GMT",
+        "summary": "\n\n\n            learn how to build a flag guessing game using pure javascript and css without any other frameworks or libraries.\n            \n              continue reading\n              making a browser based game with vanilla js and css\n              on sitepoint.\n            ",
+        "tags": [
+            "framework"
+        ]
+    }
+]
