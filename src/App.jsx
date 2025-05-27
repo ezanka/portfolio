@@ -140,7 +140,7 @@ function App() {
                                         <p className="text-purple-400">Entreprise d'accueil</p>
                                     </div>
                                 </div>
-                                <p className="text-gray-300 mb-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ipsam recusandae tempore deserunt iste. Libero nemo vel omnis, explicabo ea, quod nesciunt sint velit commodi vero magni, natus corporis iusto?</p>
+                                <p className="text-gray-300 mb-6">Entre record de fréquentation et pression concurrentielle, SNCF Voyageurs cherche l’équilibre : offrir une mobilité bas-carbone abordable tout en restant compétitive et innovante. Défi central pour la décennie ferroviaire qui s’ouvre.</p>
                                 <div className="mb-4">
                                     <div className="flex items-center mb-2">
                                         <i className='bx bxs-map text-purple-400 mr-3' ></i>
@@ -273,7 +273,7 @@ function App() {
                                         <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent flex items-end p-4">
                                             <div>
                                                 <h4 className="text-lg font-medium text-white mb-1">Annexe 8.1 - Documentation</h4>
-                                                <p className="text-sm text-gray-400">Dernière mise à jour: 17 Avril 2025</p>
+                                                <p className="text-sm text-gray-400">Dernière mise à jour: 17 Mai 2025</p>
                                             </div>
                                         </div>
                                     </div>
@@ -287,7 +287,7 @@ function App() {
                                     <div className="bg-gray-800 rounded-lg p-4 mb-6">
                                         <div className="flex items-center justify-between mb-2">
                                             <span className="text-sm font-medium">Annexe_8.1.pdf</span>
-                                            <span className="text-xs text-gray-400">2.4 MB</span>
+                                            <span className="text-xs text-gray-400">89 Ko</span>
                                         </div>
                                         <div className="w-full bg-gray-700 rounded-full h-1.5">
                                             <div className={`${dlAnnexe ? "animate-progress" : ""} h-full rounded-full bg-purple-700`}></div>

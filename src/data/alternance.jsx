@@ -20,6 +20,15 @@ const alternance = {
                 {tag : "Ticket"}, 
             ]
         },
+        {
+            title : "Suite microsoft", 
+            description : "Création d'applications, d'automatisation, d'analyse de données.", 
+            tags : [
+                {tag : "Power Apps"}, 
+                {tag : "Power Automate"},
+                {tag : "Power BI"}, 
+            ]
+        },
     ]
 }
 

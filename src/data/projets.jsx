@@ -13,7 +13,7 @@ const projets = {
                 {tag : "HTML"}, 
                 {tag : "CSS"}
             ],
-            link: "https://github.com/ezanka/werewolf"
+            link: "https://github.com/ezanka/portfolio"
         },
         
     ],
