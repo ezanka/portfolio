@@ -23,7 +23,7 @@ import annexeImg from './assets/annexe8_1.png'
 
 function App() {
 
-    const filters = ["tous", "web", "java", "reseau"];
+    const filters = ["tous", "web", "java", "cyber"];
 
     const [activeFilter, setActiveFilter] = useState("tous");
     const [viewAnnexe, setViewAnnexe] = useState(false);
@@ -92,7 +92,7 @@ function App() {
                         {(activeFilter === "tous"
                             ? Object.values(allProjects).flat()
                             : filteredProjects
-                            ).map(({ title, description, banner, tags, link }, index) => (
+                            ).map(({ title, description, banner, tags, redirect, link }, index) => (
                                 <div key={index} className="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-purple-500/20 transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
                                     <div className="h-48 overflow-hidden">
                                         <img src={banner} alt="" className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
@@ -106,14 +106,18 @@ function App() {
                                             ))}
                                         </div>
                                         <div className="mt-auto flex space-x-3">
-                                            <a href="https://www.sioslam.fr/daietti_Ethan/" target="_blank" className="bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-lg transition-colors duration-300 flex items-center !rounded-button whitespace-nowrap cursor-pointer">
-                                                <i className='bx bx-link-external mr-2'></i>
-                                                Ouvrir
-                                            </a>
-                                            <a href={link} target="_blank" className="bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-lg transition-colors duration-300 flex items-center !rounded-button whitespace-nowrap cursor-pointer">
-                                                <i className='bx bxl-github mr-2'></i>
-                                                GitHub
-                                            </a>
+                                            {redirect && (
+                                                <a href={redirect} target="_blank" className="bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-lg transition-colors duration-300 flex items-center !rounded-button whitespace-nowrap cursor-pointer">
+                                                    <i className='bx bx-link-external mr-2'></i>
+                                                    Ouvrir
+                                                </a>
+                                            )}
+                                            {link && (
+                                                <a href={link} target="_blank" className="bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-lg transition-colors duration-300 flex items-center !rounded-button whitespace-nowrap cursor-pointer">
+                                                    <i className='bx bxl-github mr-2'></i>
+                                                    GitHub
+                                                </a>
+                                            )}
                                         </div>
                                     </div>
                                 </div>
@@ -273,7 +277,7 @@ function App() {
                                         <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent flex items-end p-4">
                                             <div>
                                                 <h4 className="text-lg font-medium text-white mb-1">Annexe 8.1 - Documentation</h4>
-                                                <p className="text-sm text-gray-400">Dernière mise à jour: 17 Mai 2025</p>
+                                                <p className="text-sm text-gray-400">Dernière mise à jour: 26 février 2026</p>
                                             </div>
                                         </div>
                                     </div>
@@ -287,7 +291,7 @@ function App() {
                                     <div className="bg-gray-800 rounded-lg p-4 mb-6">
                                         <div className="flex items-center justify-between mb-2">
                                             <span className="text-sm font-medium">Annexe_8.1.pdf</span>
-                                            <span className="text-xs text-gray-400">89 Ko</span>
+                                            <span className="text-xs text-gray-400">142 Ko</span>
                                         </div>
                                         <div className="w-full bg-gray-700 rounded-full h-1.5">
                                             <div className={`${dlAnnexe ? "animate-progress" : ""} h-full rounded-full bg-purple-700`}></div>

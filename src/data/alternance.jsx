@@ -29,6 +29,23 @@ const alternance = {
                 {tag : "Power BI"}, 
             ]
         },
+        {
+            title : "Formation", 
+            description : "Réalisation d'un formation débutant et avancé sur power apps.", 
+            tags : [
+                {tag : "Power Apps"}, 
+                {tag : "Formation"},
+            ]
+        },
+        {
+            title : "Power Apps", 
+            description : "Réalisation de deux applications power apps.", 
+            tags : [
+                {tag : "Power Apps"}, 
+                {tag : "Développement"},
+                {tag : "Production"},
+            ]
+        },
     ]
 }
 
