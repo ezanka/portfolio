@@ -21,19 +21,10 @@ const alternance = {
             ]
         },
         {
-            title : "Suite microsoft", 
-            description : "Création d'applications, d'automatisation, d'analyse de données.", 
-            tags : [
-                {tag : "Power Apps"}, 
-                {tag : "Power Automate"},
-                {tag : "Power BI"}, 
-            ]
-        },
-        {
             title : "Formation", 
-            description : "Réalisation d'un formation débutant et avancé sur power apps.", 
+            description : "Réalisation d'un formation débutant et avancé sur power BI.", 
             tags : [
-                {tag : "Power Apps"}, 
+                {tag : "Power BI"}, 
                 {tag : "Formation"},
             ]
         },
@@ -42,6 +33,15 @@ const alternance = {
             description : "Réalisation de deux applications power apps.", 
             tags : [
                 {tag : "Power Apps"}, 
+                {tag : "Développement"},
+                {tag : "Production"},
+            ]
+        },
+        {
+            title : "Site nextjs", 
+            description : "Reprise d'un sujet nextjs.", 
+            tags : [
+                {tag : "Next.js"}, 
                 {tag : "Développement"},
                 {tag : "Production"},
             ]

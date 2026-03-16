@@ -11,12 +11,6 @@ import veille from "../veille_frameworks.json"
 {/* Import Img */}
 import pp from "./assets/pp.png"
 import logoSNCF from './assets/alternance/logoSNCF.png'
-import framework from './assets/veille/framework.png'
-import angular from './assets/veille/angular.png'
-import react from './assets/veille/react.png'
-import vue from './assets/veille/vue.png'
-import web from './assets/veille/web.png'
-import defaultImg from './assets/veille/web.png'
 
 import annexe from './assets/annexe8_1.pdf'
 import annexeImg from './assets/annexe8_1.png'
@@ -37,37 +31,69 @@ function App() {
             <div className="min-h-screen bg-gray-900 text-white font-inter">
                 <Navbar /> 
                 <section id="accueil" className="min-h-screen pt-24 pb-16 bg-gradient-to-br from-gray-900 to-purple-900 flex align-middle">
-                    <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
-                        <div className="md:w-1/2 text-center md:text-left mb-12 md:mb-0 ">
-                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-poppins mb-4 leading-tight">
-                                <span className="block">Ethan D'aïetti</span> 
-                                <span className="text-purple-400">Développeur Web</span>
-                            </h1>
-                            <p className="text-xl text-gray-300 mb-8">
-                                Étudiant en BTS SIO SLAM, passionné par le développement et les technologies web modernes.
-                            </p>
-                            <button onClick={() => {const section = document.getElementById("projets"); section?.scrollIntoView({ behavior: "smooth" }); }} href="#projets" className="bg-purple-600 hover:bg-purple-700 text-white py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg !rounded-button whitespace-nowrap cursor-pointer">
-                                Découvrir mes projets
-                                <i className='bx bx-right-arrow-alt' ></i>
-                            </button>
-                        </div>
-                        <div className="md:w-1/2 flex justify-center">
-                            <div className="relative">
-                                <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-purple-500 shadow-2xl">
-                                    <img src={pp} alt="Portait Ethan" className="w-full h-full object-cover object-top" />
-                                </div>
-                                <div className="absolute -bottom-4 -right-4 bg-purple-600 text-white px-4 py-2 rounded-lg shadow-lg">
-                                    <span className="text-sm">Promo 2024-2026</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-                        <button onClick={() => {const section = document.getElementById("projets"); section?.scrollIntoView({ behavior: "smooth" }); }} href="#projets" className="text-gray-400 hover:text-white cursor-pointer">
-                            <i className='bx bx-chevron-down text-4xl' ></i>
-                        </button>
-                    </div>
-                </section> 
+    <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+        <div className="md:w-1/2 text-center md:text-left mb-12 md:mb-0">
+            <p className="text-purple-400 font-medium mb-3 tracking-widest text-sm uppercase">Étudiant en alternance · BTS SIO SLAM</p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-poppins mb-4 leading-tight">
+                <span className="block">Ethan D'aïetti</span>
+                <span className="text-purple-400">Développeur Web</span>
+            </h1>
+            <p className="text-gray-300 mb-4 leading-relaxed">
+                Passionné par le développement web full-stack, je suis actuellement en alternance à la{" "}
+                <span className="text-purple-400 font-semibold">SNCF Voyageurs</span> dans le cadre de mon BTS SIO option SLAM (promo 2024–2026).
+                Je conçois et développe des applications web modernes, de la base de données à l'interface utilisateur.
+            </p>
+
+            {/* Stack */}
+            <div className="mb-8">
+                <p className="text-xs uppercase tracking-widest text-gray-500 mb-3">Stack principale</p>
+                <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                    {[
+                        { label: "Next.js",     color: "bg-gray-700 text-white" },
+                        { label: "React",       color: "bg-cyan-900 text-cyan-300" },
+                        { label: "TypeScript",  color: "bg-blue-900 text-blue-300" },
+                        { label: "Prisma",      color: "bg-indigo-900 text-indigo-300" },
+                        { label: "PostgreSQL",  color: "bg-sky-900 text-sky-300" },
+                        { label: "TailwindCSS", color: "bg-teal-900 text-teal-300" },
+                        { label: "Java",        color: "bg-orange-900 text-orange-300" },
+                        { label: "PHP / MySQL", color: "bg-violet-900 text-violet-300" },
+                    ].map(({ label, color }) => (
+                        <span key={label} className={`${color} text-xs font-semibold px-3 py-1 rounded-full border border-white/10`}>
+                            {label}
+                        </span>
+                    ))}
+                </div>
+            </div>
+
+            <button
+                onClick={() => document.getElementById("projets")?.scrollIntoView({ behavior: "smooth" })}
+                className="bg-purple-600 hover:bg-purple-700 text-white py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg !rounded-button whitespace-nowrap cursor-pointer"
+            >
+                Découvrir mes projets <i className='bx bx-right-arrow-alt'></i>
+            </button>
+        </div>
+
+        <div className="md:w-1/2 flex justify-center">
+            <div className="relative">
+                <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-purple-500 shadow-2xl">
+                    <img src={pp} alt="Portrait Ethan" className="w-full h-full object-cover object-top" />
+                </div>
+                <div className="absolute -bottom-4 -right-4 bg-purple-600 text-white px-4 py-2 rounded-lg shadow-lg">
+                    <span className="text-sm">Promo 2024–2026</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <button
+            onClick={() => document.getElementById("projets")?.scrollIntoView({ behavior: "smooth" })}
+            className="text-gray-400 hover:text-white cursor-pointer"
+        >
+            <i className='bx bx-chevron-down text-4xl'></i>
+        </button>
+    </div>
+</section>
                 <section id="projets" className="py-20 bg-gray-900">
                     <div className="container mx-auto px-6">
                         <div className="text-center mb-16">
@@ -184,69 +210,94 @@ function App() {
                     </div>
                 </section>
                 <section id="veille" className="py-20 bg-gray-900">
-                    <div className="container mx-auto px-6">
-                        <div className="text-center mb-16">
-                            <h2 className="text-3xl md:text-4xl font-bold font-poppins mb-4">Veille Technologique</h2>
-                            <div className="w-24 h-1 bg-purple-500 mx-auto"></div>
-                            <p className="mt-4 text-gray-400 max-w-2xl mx-auto">Les sujets technologiques que je suis.</p>
+    <div className="container mx-auto px-6">
+        <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold font-poppins mb-4">Veille Technologique</h2>
+            <div className="w-24 h-1 bg-purple-500 mx-auto"></div>
+            <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
+                Comment je reste informé des évolutions technologiques de mon domaine.
+            </p>
+        </div>
+
+        <div className="max-w-4xl mx-auto">
+            {/* Présentation TLDR */}
+            <div className="bg-gray-800 rounded-xl p-8 shadow-lg mb-10 flex flex-col md:flex-row items-center gap-8">
+                <div className="flex-shrink-0 flex items-center justify-center w-24 h-24 rounded-2xl bg-gray-900 border border-purple-700 shadow-md">
+                    <span className="text-3xl font-extrabold text-white font-poppins tracking-tight">TLDR</span>
+                </div>
+                <div>
+                    <h3 className="text-xl font-bold font-poppins mb-2">
+                        <a href="https://tldr.tech" target="_blank" className="text-purple-400 hover:underline">tldr.tech</a>
+                        {" "}<span className="text-white">— ma source de veille quotidienne</span>
+                    </h3>
+                    <p className="text-gray-300 leading-relaxed">
+                        TLDR est une newsletter tech quotidienne lue par plus d'1,6 million de développeurs et professionnels IT.
+                        Chaque édition résume en quelques minutes les actualités les plus importantes du secteur : nouvelles technologies,
+                        sorties d'outils, bonnes pratiques, sécurité et bien plus. J'ai choisi TLDR car le contenu est dense, sans bruit,
+                        et directement orienté terrain.
+                    </p>
+                </div>
+            </div>
+
+            {/* Newsletters choisies */}
+            <h4 className="text-lg font-semibold font-poppins text-gray-300 mb-5 text-center">
+                Mes newsletters sélectionnées
+            </h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                {[
+                    {
+                        label: "TLDR Dev",
+                        color: "border-violet-600",
+                        badge: "bg-violet-700",
+                        icon: "bx bx-code-alt",
+                        link: "https://tldr.tech/dev",
+                        description: "Actualités développement, nouveaux langages, frameworks, architecture logicielle et retours d'expérience d'ingénieurs."
+                    },
+                    {
+                        label: "TLDR IT",
+                        color: "border-blue-600",
+                        badge: "bg-blue-700",
+                        icon: "bx bx-server",
+                        link: "https://tldr.tech/it",
+                        description: "Infrastructure, cloud, systèmes d'entreprise, tendances IT et outils de productivité pour les équipes tech."
+                    },
+                    {
+                        label: "TLDR InfoSec",
+                        color: "border-red-600",
+                        badge: "bg-red-700",
+                        icon: "bx bx-shield-alt-2",
+                        link: "https://tldr.tech/infosec",
+                        description: "Vulnérabilités, cyberattaques, bonnes pratiques de sécurité applicative et réseau — un sujet central en BTS SIO."
+                    },
+                    {
+                        label: "TLDR AI",
+                        color: "border-emerald-600",
+                        badge: "bg-emerald-700",
+                        icon: "bx bx-brain",
+                        link: "https://tldr.tech/ai",
+                        description: "Sorties de modèles, recherche, outils IA et impact sur le métier de développeur — une veille devenue incontournable."
+                    },
+                ].map(({ label, color, badge, icon, link, description }, index) => (
+                    <a
+                        key={index}
+                        href={link}
+                        target="_blank"
+                        className={`bg-gray-800 border-l-4 ${color} rounded-xl p-6 shadow hover:shadow-purple-500/20 transition-all duration-300 hover:-translate-y-1 flex flex-col gap-3 cursor-pointer group`}
+                    >
+                        <div className="flex items-center gap-3">
+                            <span className={`${badge} text-white text-xs font-bold px-3 py-1 rounded-full`}>{label}</span>
+                            <i className={`${icon} text-2xl text-gray-400 group-hover:text-white transition-colors`}></i>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            {veille.map(({ title, link, published, summary, tags }, index) => {
-                                const getImageByTag = () => {
-                                    const tagMap = {
-                                        react: react,
-                                        vue: vue,
-                                        angular: angular,
-                                        web: web,
-                                        framework: framework
-                                    };
-
-                                    for (const tag of tags) {
-                                        if (tagMap[tag.toLowerCase()]) return tagMap[tag.toLowerCase()];
-                                    }
-
-                                    return defaultImg;
-                                };
-
-                                return (
-                                    <div key={index} className="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-purple-500/20 transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
-                                        <div className="h-48 overflow-hidden">
-
-                                        <img
-                                            src={getImageByTag()}
-                                            alt={title}
-                                            className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                                        />
-
-                                            
-                                        </div>
-                                        <div className="p-6 flex flex-col justify-between flex-grow">
-                                            <div>
-                                                <div className="flex justify-between items-center mb-3">
-                                                    <span className="text-xs text-purple-400">{published}</span>
-                                                    <div className="w-full flex items-center justify-end gap-2 overflow-x-hidden">
-                                                        {tags.map((tag, index) => (
-                                                            <span key={index} className="bg-purple-900 text-purple-200 text-xs px-3 py-1 rounded-full">{tag}</span>
-                                                        ))}
-                                                    </div>
-                                                </div>
-                                                <h3 className="text-xl font-bold font-poppins mb-3">{title}</h3>
-                                                <p className="text-gray-400 mb-4 line-clamp-3">{summary}</p>
-                                            </div>
-                                            <a
-                                                href={link}
-                                                target="_blank"
-                                                className="mt-auto text-purple-400 hover:text-purple-300 inline-flex items-center transition-colors duration-300 cursor-pointer"
-                                            >
-                                                Lire plus <i className='bx bxs-right-arrow-alt ml-2 text-sm'></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                )
-                            })}
-                        </div>
-                    </div>
-                </section>
+                        <p className="text-gray-400 text-sm leading-relaxed">{description}</p>
+                        <span className="text-purple-400 text-xs inline-flex items-center mt-auto">
+                            Voir la newsletter <i className="bx bxs-right-arrow-alt ml-1"></i>
+                        </span>
+                    </a>
+                ))}
+            </div>
+        </div>
+    </div>
+</section>
                 <section id="annexe" className="py-20 bg-gray-800">
                     <div className="container mx-auto px-6">
                         <div className="text-center mb-16">
