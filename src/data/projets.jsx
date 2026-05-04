@@ -1,4 +1,4 @@
-import projetSite from "../assets/projets/projetSite.png";
+import immoboard from "../assets/projets/immoboard.png";
 import vizyy from "../assets/projets/vizyy.png";
 import projectizy from "../assets/projets/projectizy.png";
 import werewolf from "../assets/projets/werewolf.png";
@@ -9,15 +9,30 @@ import phising from "../assets/projets/phising.png";
 const projets = {
   web: [
     {
-      title: "Portfolio — Site de projets",
+      title: "Immoboard",
       description:
-        "Site web personnel regroupant l'ensemble de mes projets réalisés durant mon cursus BTS SIO option SLAM. Conçu pour présenter mes compétences et réalisations de manière claire et professionnelle.",
-      banner: projetSite,
+        "SaaS de gestion immobilière permettant aux propriétaires de gérer leurs biens, baux, paiements, dépenses et incidents depuis un tableau de bord centralisé.",
+      banner: immoboard,
       context:
-        "Projet personnel réalisé en parallèle de ma formation pour centraliser et valoriser mes travaux auprès des jurys et recruteurs.",
-      stack: ["HTML", "CSS", "JavaScript"],
-      tags: [{ tag: "Web" }, { tag: "HTML" }, { tag: "CSS" }],
-      link: "https://github.com/ezanka/portfolio",
+        "Projet personnel full-stack conçu et développé de A à Z, de la conception du schéma de base de données jusqu'au déploiement en production sur Vercel. Disponible à l'adresse immoboard.dev.",
+      stack: [
+        "Next.js",
+        "TypeScript",
+        "Prisma 7",
+        "PostgreSQL",
+        "Better Auth",
+        "TailwindCSS",
+        "shadcn/ui",
+        "Vercel",
+        "Supabase Storage",
+      ],
+      tags: [
+        { tag: "Web" },
+        { tag: "Next.js" },
+        { tag: "SaaS" },
+        { tag: "Full-stack" },
+      ],
+      redirect: "https://immoboard.dev",
     },
     {
       title: "Vizyy",
