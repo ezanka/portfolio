@@ -1,96 +1,103 @@
-
-import projetSite from "../assets/projets/projetSite.png"
-import inDev from "../assets/projets/endev.png"
-import vizyy from "../assets/projets/vizyy.png"
-import projectizy from "../assets/projets/projectizy.png"
-import werewolf from "../assets/projets/werewolf.png"
-import gamehub from "../assets/projets/gamehub.png"
-import rainbowTable from "../assets/projets/rainbowTable.png"
-import phising from "../assets/projets/phising.png"
+import projetSite from "../assets/projets/projetSite.png";
+import vizyy from "../assets/projets/vizyy.png";
+import projectizy from "../assets/projets/projectizy.png";
+import werewolf from "../assets/projets/werewolf.png";
+import gamehub from "../assets/projets/gamehub.png";
+import rainbowTable from "../assets/projets/rainbowTable.png";
+import phising from "../assets/projets/phising.png";
 
 const projets = {
-    web : [
-        {
-            title : "Site regroupant les projets",
-            description : "Une application web regroupant mes projets web réalisé pendant mon cursus",
-            banner : projetSite,
-            tags : [
-                {tag : "Web"},
-                {tag : "HTML"},
-                {tag : "CSS"}
-            ],
-            link: "https://github.com/ezanka/portfolio"
-        },
-        {
-            title : "Vizyy",
-            description : "Site de suivi de projet pour le client, permettant de visualiser l'avancement des tâches en temps réel.",
-            banner : vizyy,
-            tags : [
-                {tag : "Web"},
-                {tag : "React"},
-                {tag : "Suivi projet"}
-            ],
-            redirect: "https://vizyy.vercel.app/",
-            link: "https://github.com/ezanka/vizyy"
-        },
-        {
-            title : "Projectizy",
-            description : "Site de gestion de projet permettant d'organiser, planifier et suivre les projets d'une équipe.",
-            banner : projectizy,
-            tags : [
-                {tag : "Web"},
-                {tag : "React"},
-                {tag : "Gestion projet"}
-            ],
-            redirect: "https://projectizy.vercel.app/",
-            link: "https://github.com/ezanka/projectizy"
-        },
-    ],
-    java : [
-        {
-            title : "Loup garou",
-            description : "Un loup garou en locale",
-            banner : werewolf,
-            tags : [
-                {tag : "Java"},
-                {tag : "Window Builder"}
-            ],
-            link: "https://github.com/ezanka/werewolf"
-        },
-        {
-            title : "GameHub",
-            description : "Logiciel regroupant plusieurs mini-jeux, offrant une interface unifiée pour accéder à différents jeux.",
-            banner : gamehub,
-            tags : [
-                {tag : "Java"},
-                {tag : "Window Builder"},
-                {tag : "Mini-jeux"}
-            ],
-            link: "https://github.com/ezanka/gamehub"
-        }
-    ],
-    cyber : [
-        {
-            title : "Rainbow Table",
-            description : "Implémentation d'une rainbow table pour le craquage de mots de passe hashés, dans un cadre éducatif.",
-            banner : rainbowTable,
-            tags : [
-                {tag : "Cybersécurité"},
-                {tag : "Cryptographie"},
-                {tag : "Hashing"}
-            ],
-        },
-        {
-            title : "Site de phishing",
-            description : "Simulation de site de phishing à des fins éducatives et de sensibilisation à la sécurité informatique.",
-            banner : phising,
-            tags : [
-                {tag : "Cybersécurité"},
-                {tag : "Phishing"},
-                {tag : "Sensibilisation"}
-            ],
-        }
-    ]
-}
+  web: [
+    {
+      title: "Portfolio — Site de projets",
+      description:
+        "Site web personnel regroupant l'ensemble de mes projets réalisés durant mon cursus BTS SIO option SLAM. Conçu pour présenter mes compétences et réalisations de manière claire et professionnelle.",
+      banner: projetSite,
+      context:
+        "Projet personnel réalisé en parallèle de ma formation pour centraliser et valoriser mes travaux auprès des jurys et recruteurs.",
+      stack: ["HTML", "CSS", "JavaScript"],
+      tags: [{ tag: "Web" }, { tag: "HTML" }, { tag: "CSS" }],
+      link: "https://github.com/ezanka/portfolio",
+    },
+    {
+      title: "Vizyy",
+      description:
+        "Application web de suivi de projet orientée client. Permet de visualiser l'avancement des tâches, les jalons et les livrables en temps réel, avec une interface claire et accessible à des utilisateurs non techniques.",
+      banner: vizyy,
+      context:
+        "Projet réalisé dans le cadre de ma formation BTS SIO SLAM pour répondre à un besoin concret de communication entre une équipe de développement et ses clients.",
+      stack: ["React", "Next.js", "PostgreSQL", "Vercel"],
+      tags: [{ tag: "Web" }, { tag: "React" }, { tag: "Suivi projet" }],
+      redirect: "https://vizyy.vercel.app/",
+      link: "https://github.com/ezanka/vizyy",
+    },
+    {
+      title: "Projectizy",
+      description:
+        "Outil de gestion de projet collaboratif permettant d'organiser les tâches, planifier les sprints et suivre l'avancement d'une équipe. Tableau de bord centralisé avec gestion des membres et des statuts.",
+      banner: projectizy,
+      context:
+        "Projet réalisé en formation pour appliquer les concepts de gestion de projet agile dans un outil web full-stack.",
+      stack: ["React", "Next.js", "PostgreSQL", "Vercel"],
+      tags: [{ tag: "Web" }, { tag: "React" }, { tag: "Gestion projet" }],
+      redirect: "https://projectizy.vercel.app/",
+      link: "https://github.com/ezanka/projectizy",
+    },
+  ],
+  java: [
+    {
+      title: "Loup Garou",
+      description:
+        "Jeu de Loup Garou jouable en local, avec gestion des rôles, des tours de jeu et de l'élimination des joueurs. Interface graphique développée avec Swing / Window Builder.",
+      banner: werewolf,
+      context:
+        "Projet Java réalisé en formation pour mettre en pratique la programmation orientée objet, la gestion d'états et la conception d'interfaces graphiques.",
+      stack: ["Java", "Swing", "Window Builder"],
+      tags: [{ tag: "Java" }, { tag: "Window Builder" }],
+      link: "https://github.com/ezanka/werewolf",
+    },
+    {
+      title: "GameHub",
+      description:
+        "Logiciel Java regroupant plusieurs mini-jeux accessibles depuis une interface unifiée. Chaque jeu est indépendant et navigable depuis un menu principal. Projet démontrant la modularité et la réutilisabilité du code.",
+      banner: gamehub,
+      context:
+        "Projet réalisé en formation pour consolider les bases de la POO en Java et la création d'interfaces graphiques avec Window Builder.",
+      stack: ["Java", "Swing", "Window Builder", "MVC"],
+      tags: [{ tag: "Java" }, { tag: "Window Builder" }, { tag: "Mini-jeux" }],
+      link: "https://github.com/ezanka/gamehub",
+    },
+  ],
+  cyber: [
+    {
+      title: "Rainbow Table",
+      description:
+        "Implémentation d'une rainbow table pour illustrer le craquage de mots de passe hashés. Le projet démontre les limites des algorithmes de hachage sans sel et l'importance du salage en cryptographie.",
+      banner: rainbowTable,
+      context:
+        "Projet réalisé dans le cadre du module cybersécurité du BTS SIO, à des fins pédagogiques. Aucune utilisation malveillante — objectif : comprendre les vulnérabilités pour mieux les prévenir.",
+      stack: ["PHP", "MySQL", "MD5 / SHA-1"],
+      tags: [
+        { tag: "Cybersécurité" },
+        { tag: "Cryptographie" },
+        { tag: "Hashing" },
+      ],
+    },
+    {
+      title: "Site de phishing",
+      description:
+        "Simulation d'un site de phishing reproduisant l'interface d'un service connu pour sensibiliser aux techniques d'hameçonnage. Le projet illustre comment les attaquants trompent les utilisateurs et comment s'en protéger.",
+      banner: phising,
+      context:
+        "Projet réalisé dans le cadre du module cybersécurité du BTS SIO à des fins de sensibilisation uniquement. Déployé en environnement isolé, sans données réelles collectées.",
+      stack: ["PHP", "MySQL", "HTML", "CSS"],
+      tags: [
+        { tag: "Cybersécurité" },
+        { tag: "Phishing" },
+        { tag: "Sensibilisation" },
+      ],
+    },
+  ],
+};
 
-export default projets
+export default projets;
