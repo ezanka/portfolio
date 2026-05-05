@@ -3,7 +3,7 @@ const alternance = {
     {
       title: "GLPI",
       date: "09/2025 - 05/2026",
-      description: "Gestions du parc informatiques et résolutions d'incidents.",
+      description: "Gestion du parc informatiques et résolutions d'incidents.",
       tags: [
         { tag: "Inventaire" },
         { tag: "Suivi" },
@@ -15,14 +15,14 @@ const alternance = {
       title: "Migrations",
       date: "~ 2 mois",
       description:
-        "Réalisations de la migration des pc portables, pc fixes, smartphones, tablettes.",
+        "Réalisation de la migration des pc portables, pc fixes, smartphones, tablettes.",
       tags: [{ tag: "Déploiement" }, { tag: "Configuration" }],
     },
     {
       title: "Formation",
       date: "09/2025 - 05/2026",
       description:
-        "Réalisation d'un formation débutant et avancé sur power BI.",
+        "Réalisation d'une formation débutant et avancé sur power BI.",
       tags: [{ tag: "Power BI" }, { tag: "Formation" }],
     },
     {

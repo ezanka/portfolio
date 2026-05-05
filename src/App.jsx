@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import Navbar from "./components/Navbar";
 import ProjectModal from "./components/ProjectModal";
+import Footer from "./components/Footer";
 
 import projets from "./data/projets";
 import alternance from "./data/alternance";
@@ -566,6 +567,7 @@ function App() {
             </div>
           </div>
         </section>
+        <Footer />
       </div>
       {selectedProject && (
         <ProjectModal
