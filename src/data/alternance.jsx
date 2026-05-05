@@ -22,13 +22,13 @@ const alternance = {
       title: "Formation",
       date: "09/2025 - 05/2026",
       description:
-        "Réalisation d'une formation débutant et avancé sur power BI.",
+        "Participation à une formation Power BI (niveaux débutant et avancé).",
       tags: [{ tag: "Power BI" }, { tag: "Formation" }],
     },
     {
       title: "Power Apps",
       date: "01/2026 - 04/2026",
-      description: "Réalisation de deux applications power apps.",
+      description: "Développement de deux applications métier via Power Apps, déployées en production et utilisées par les équipes.",
       tags: [
         { tag: "Power Apps" },
         { tag: "Développement" },
@@ -38,7 +38,7 @@ const alternance = {
     {
       title: "Site nextjs",
       date: "04/2026 - 05/2026",
-      description: "Reprise d'un sujet nextjs.",
+      description: "Reprise et amélioration d'une application interne Next.js existante : analyse du code existant, ajout de fonctionnalités et mise en production.",
       tags: [
         { tag: "Next.js" },
         { tag: "Développement" },
