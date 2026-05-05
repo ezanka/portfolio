@@ -42,7 +42,7 @@ const projets = {
       context:
         "Projet réalisé dans le cadre de ma formation BTS SIO SLAM pour répondre à un besoin concret de communication entre une équipe de développement et ses clients.",
       stack: ["React", "Next.js", "PostgreSQL", "Vercel"],
-      tags: [{ tag: "Web" }, { tag: "React" }, { tag: "Suivi projet" }],
+      tags: [{ tag: "Web" }, { tag: "Next.js" }, { tag: "Suivi projet" }],
       redirect: "https://vizyy.vercel.app/",
       link: "https://github.com/ezanka/vizyy",
     },
@@ -54,7 +54,7 @@ const projets = {
       context:
         "Projet réalisé en formation pour appliquer les concepts de gestion de projet agile dans un outil web full-stack.",
       stack: ["React", "Next.js", "PostgreSQL", "Vercel"],
-      tags: [{ tag: "Web" }, { tag: "React" }, { tag: "Gestion projet" }],
+      tags: [{ tag: "Web" }, { tag: "Next.js" }, { tag: "Gestion projet" }],
       redirect: "https://projectizy.vercel.app/",
       link: "https://github.com/ezanka/projectizy",
     },
